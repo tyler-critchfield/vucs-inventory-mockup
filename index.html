@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>Rob's Rings</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box box1 banner"><img src="images\banner.png"></div>       
+        <div class="box box2">
+            <div class="imageInput">Upload Image File<input type="file"  accept="image/*" name="image" id="file" class="hide_file"  onchange="loadFile(event)"></div>
+            <div><img id="output" width="200" /></div> 
+        </div>
+        <div class="box box3">
+            Description
+            <div>
+                <form>
+                <textarea name="message" rows="10" cols="30">Information about the rings or trinkets.</textarea>
+               </form>
+            </div>
+            <div>
+                <select>
+                    <option value="Titanium Steel">Titanium Steel</option>
+                    <option value="Alloy">Alloy</option>
+                    <option value="Zinc Alloy">Zinc Alloy</option>
+                    <option value="Stainless Steel Tin Alloy">Stainless Steel Tin Alloy</option>
+                    <option value="Tin Alloy">Tin Alloy</option>
+                    <option value="Stainless Steel Titanium">Stainless Steel Titanium</option>
+                    <option value="925 Sterling Silver Main Stone Topaz">925 Sterling Silver Main Stone Topaz</option>
+                    <option value="925 Sterling Silver Created Topaz">925 Sterling Silver Created Topaz</option>
+                    <option value="Silver Plated Precious Stone">Silver Plated Precious Stone</option>
+                    <option value="925 Sterling Silver CZ">925 Sterling Silver CZ</option>
+                    <option value="925 Silver Semi Precious Stone">925 Silver Semi Precious Stone</option>
+                    <option value="Resin">Resin</option>
+                    <option value="925 Sterling Silver CZ Stone">925 Sterling Silver CZ Stone</option>
+                    <option value="925 Sterling Silver">925 Sterling Silver</option>
+                    <option value="Silver CZ Stones">Silver CZ Stones</option>
+                    <option value="Silicone">Silicone</option>
+                </select>
+            </div>
+        </div>
+        <div class="box box4 nested">
+            <form>
+                <label>Code:</label><input type="text" id="inputCode"><br>
+                Size: <input type="text" id="inputSize"><br>
+                Cost: <input type="text" id="inputCost"><br>
+                Price: <input type="text" id="inputPrice"><br>
+                Quantity: <input type="text" id="inputQuantity"><br>
+                <br>
+                <button onclick="showInput()">Submit</button>
+            </form>
+        </div>
+
+        <div class="box box5"></div>
+        <div class="box box6">Ring Pic</div>
+        <div class="box box7">Description</div>
+        <div class="box box8 nested">
+            <div id="displayCode">Code:</div>
+            <div id="displaySize">Size:</div>
+            <div id="displayCost">Cost:</div>
+            <div id="displayPrice">Price:</div>
+            <div id="displayQuantity">Quantity:</div>
+        </div>
+     </div>
+</body>
+</html>
